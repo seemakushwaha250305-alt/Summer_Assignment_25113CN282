@@ -1,0 +1,25 @@
+#include<stdio.h>
+//check Armstrong number 
+int main()
+{
+    int n,temp,rev,rem;
+   printf("Enter a number:");
+   scanf("%d",&n);
+   temp=n;
+   rev=0;
+   while(temp!=0)
+   {
+       rem=temp%10;
+       rev=rev*10+rem;
+       temp=temp/10;
+   }
+   if(rev==n)
+   {
+       printf("The number is an Armstrong number.");
+   }
+   else
+   {
+       printf("The number is not an Armstrong number.");
+   }
+   return 0;
+}
